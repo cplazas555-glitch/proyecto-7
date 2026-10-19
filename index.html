@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title></title>
+    <link rel='stylesheet' href='estilos.css'>
+</head>
+
+<body>
+    <main class="contenedor">
+        <section class="formulario">
+            <h1>Crear cuenta</h1>
+            <p>Ingresa tus datos para ingresar</p>
+
+            <form>
+                <label for="nombre">Nombre completo </label>
+                <input type="text" id="nombre" name="nombre" required>
+
+
+                <label for="correo">Correo electronico</label>
+                <input type="email" id="correo" name="correo" required>
+
+
+                <label for="contraseña">Contraseña</label>
+                <div class="campo">
+                    <input type="password" id="contraseña" name="contraseña" required>
+                    <button type="button" disabled aria-label="Mostrar contraseña">◉</button>
+                </div>
+
+                <label for="confirmar">Confirmar contraseña</label>
+                <input type="password" id="confirmar" name="confirmar" required>
+
+                <button type="submit" class="enviar">Crear cuenta</button>
+
+            </form>
+        </section>
+        <aside class="progreso">
+            <h2>Progreso del perfil</h2>
+
+            <div class="progreso-circular" role="progressbar" aria-label="Progreso del perfil" aria-valuemin="0"
+                aria-valuemax="100" aria-valuenow="30">
+
+                <span>30%</span>
+
+            </div>
+
+            <h3>Requisitos</h3>
+            <p>✓ Nombre completo</p>
+            <p>✓ Correo electrónico</p>
+            <p>○ Crear contraseña</p>
+            <p>○ Confirmar contraseña</p>
+        </aside>
+
+    </main>
+
+</body>
+
+</html>

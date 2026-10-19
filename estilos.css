@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background-color: #2f6ba6;
+    color: #222222;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+   
+}
+.contenedor{
+    display: flex;
+    align-items: stretch;
+    max-width: 750px;
+    margin:30px auto ;
+    background-color: rgb(159, 155, 155);
+    border-radius: 20px;
+    border: 1px solid #cccccc;
+    overflow: hidden;
+}
+.formulario{
+    flex: 1.2;
+    padding: 30px;
+}
+.progreso{
+    flex: 0.8;
+    padding: 30px;
+    background-color: #3f3a3a48;
+    justify-content: center;
+}
+label{
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.campo{
+    display: flex;
+}
+.campo input {
+    flex:1;
+    min-width: 0;
+}
+.enviar {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #222222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Barra de progreso circular */
+.progreso-circular {
+    width: 130px;
+    height: 130px;
+    margin: 20px auto;
+    border-radius: 50%;
+
+    background: conic-gradient(
+        #800505 0% 30%,
+        #cccccc 30% 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Centro blanco del círculo */
+.progreso-circular::before {
+    content: "";
+    position: absolute;
+    width: 116px;
+    height: 116px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Porcentaje en el centro */
+.progreso-circular span {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: #900808;
+}
